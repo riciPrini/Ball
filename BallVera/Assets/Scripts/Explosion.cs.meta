@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 98510401998c525449e122a60fd30af2
+timeCreated: 1526833798
+licenseType: Free
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - redMaterial: {fileID: 2100000, guid: 05de6e421dda58149b3b62ada03389b5, type: 2}
+  - yellowMaterial: {instanceID: 0}
+  - blueMaterial: {instanceID: 0}
+  - greenMaterial: {instanceID: 0}
+  - orangeMaterial: {instanceID: 0}
+  - pinkMaterial: {instanceID: 0}
+  - purpleMaterial: {instanceID: 0}
+  - waterMaterial: {instanceID: 0}
+  - whiteMaterial: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
