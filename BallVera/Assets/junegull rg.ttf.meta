@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 705f78308cd27dc428f69cfca81346cb
+timeCreated: 1526994854
+licenseType: Pro
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Junegull
+  fontNames:
+  - Junegull
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 0a7f9ec055c507744b2c08384dd0338d, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
