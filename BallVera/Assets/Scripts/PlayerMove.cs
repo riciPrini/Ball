@@ -19,6 +19,7 @@ public class PlayerMove : MonoBehaviour {
     public GameObject recordText;
     public GameObject stars;
     public GameObject gems;
+    public GameObject gemma_img; //dioporco è l'ultimo gioco di merda che faccio con sto unity del cazzo.
     Touch touch;
     Vector3 touchPosition, whereToMove;
     bool isMoving = false;
