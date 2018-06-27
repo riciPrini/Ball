@@ -13,7 +13,7 @@ OcclusionCullingSettings:
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 8
+  serializedVersion: 9
   m_Fog: 0
   m_FogColor: {r: 0.7607844, g: 0.7607844, b: 0.7607844, a: 0}
   m_FogMode: 3
@@ -39,6 +39,7 @@ RenderSettings:
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
   m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -54,11 +55,10 @@ LightmapSettings:
     m_EnableBakedLightmaps: 1
     m_EnableRealtimeLightmaps: 1
   m_LightmapEditorSettings:
-    serializedVersion: 9
+    serializedVersion: 10
     m_Resolution: 2
     m_BakeResolution: 40
-    m_TextureWidth: 1024
-    m_TextureHeight: 1024
+    m_AtlasSize: 1024
     m_AO: 0
     m_AOMaxDistance: 1
     m_CompAOExponent: 1
@@ -960,7 +960,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000067073, y: -20}
+  m_AnchoredPosition: {x: -0.000061035156, y: -20}
   m_SizeDelta: {x: 69.3, y: 55.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &297094597
@@ -1150,7 +1150,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -5.250107, y: 327.82016}
+  m_AnchoredPosition: {x: -5.250122, y: 327.82016}
   m_SizeDelta: {x: 10.5, y: 655.6499}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &354797617
@@ -1331,7 +1331,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000024866, y: -0.000022888}
+  m_AnchoredPosition: {x: 0.000030517578, y: -0.000022888184}
   m_SizeDelta: {x: 381.3, y: 109.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &674125821
@@ -1868,7 +1868,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pm: {fileID: 1129796104}
-  gm: {fileID: 0}
   player: {fileID: 1129796098}
 --- !u!4 &814718126
 Transform:
@@ -2467,6 +2466,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: 05de6e421dda58149b3b62ada03389b5, type: 2}
   m_StaticBatchInfo:
@@ -2568,7 +2568,7 @@ MonoBehaviour:
   recordText: {fileID: 1342371599}
   stars: {fileID: 1107278053}
   gems: {fileID: 2127988675}
-  gemma_img: {fileID: 0}
+  gemImage: {fileID: 262561939}
 --- !u!114 &1129796105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2581,7 +2581,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pm: {fileID: 1129796104}
-  gm: {fileID: 0}
   player: {fileID: 1129796098}
 --- !u!114 &1129796106
 MonoBehaviour:
@@ -4453,7 +4452,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000015259, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 21, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1714879358
@@ -4609,6 +4608,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: 705f78308cd27dc428f69cfca81346cb, type: 3}
   m_StaticBatchInfo:
@@ -5428,7 +5428,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tilePrefabs:
   - {fileID: 1947279573159082, guid: 46f441bc16bd1b84c8630be6f041f3b7, type: 2}
-  - {fileID: 1947279573159082, guid: db9029b1795ba2542a7ea183b6d3b428, type: 2}
+  - {fileID: 1947279573159082, guid: 0e2f83f3aff499f4896395713fca1938, type: 2}
   - {fileID: 1947279573159082, guid: 9f2887775d49efd40acdccf08e10d7c6, type: 2}
   - {fileID: 1947279573159082, guid: 1f6705a044f1c5a4f9c8295e7569b8f3, type: 2}
   - {fileID: 1947279573159082, guid: da5b0927234a08b4eb622921a401943e, type: 2}

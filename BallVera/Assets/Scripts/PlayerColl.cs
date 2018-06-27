@@ -3,7 +3,7 @@
 public class PlayerColl : MonoBehaviour
 {
     public PlayerMove pm;
-    public PlayerMove gm;
+   
     public GameObject player;
 
     private void OnCollisionEnter(Collision collision)

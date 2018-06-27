@@ -40,6 +40,7 @@ GameObject:
   - component: {fileID: 33000527265303138}
   - component: {fileID: 23241630849800406}
   - component: {fileID: 64594842494708344}
+  - component: {fileID: 114790039586765174}
   m_Layer: 0
   m_Name: Gemma
   m_TagString: Untagged
@@ -58,6 +59,7 @@ GameObject:
   - component: {fileID: 33684238539163354}
   - component: {fileID: 23112574213364522}
   - component: {fileID: 64394211047645930}
+  - component: {fileID: 114906160906314376}
   m_Layer: 0
   m_Name: Gemma
   m_TagString: Untagged
@@ -372,6 +374,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: d336ddd216e6f564787b6e891c034d43, type: 2}
   m_StaticBatchInfo:
@@ -406,6 +409,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: 4e1959b8fe4007c458eb8029768b97c0, type: 2}
   m_StaticBatchInfo:
@@ -440,6 +444,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: 82570bbb9b75f724bae8b38fc6d20d4e, type: 2}
   m_StaticBatchInfo:
@@ -474,6 +479,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: 82570bbb9b75f724bae8b38fc6d20d4e, type: 2}
   m_StaticBatchInfo:
@@ -508,6 +514,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: d336ddd216e6f564787b6e891c034d43, type: 2}
   m_StaticBatchInfo:
@@ -542,6 +549,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: b821b4407cfb4474fa3643568159e08f, type: 2}
   m_StaticBatchInfo:
@@ -576,6 +584,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: d336ddd216e6f564787b6e891c034d43, type: 2}
   m_StaticBatchInfo:
@@ -610,6 +619,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: d336ddd216e6f564787b6e891c034d43, type: 2}
   m_StaticBatchInfo:
@@ -644,6 +654,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: d336ddd216e6f564787b6e891c034d43, type: 2}
   m_StaticBatchInfo:
@@ -678,6 +689,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: b821b4407cfb4474fa3643568159e08f, type: 2}
   m_StaticBatchInfo:
@@ -776,10 +788,10 @@ MeshCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1125051096037762}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 53a9185b76f61a745b0a93e4cdc77a9c, type: 3}
@@ -790,10 +802,10 @@ MeshCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1106586370634320}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 53a9185b76f61a745b0a93e4cdc77a9c, type: 3}
@@ -893,3 +905,27 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114790039586765174
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1106586370634320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b149e19b74c3434bbd7b5429a97d98b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gemsCoin: 0
+--- !u!114 &114906160906314376
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1125051096037762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b149e19b74c3434bbd7b5429a97d98b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gemsCoin: 0
