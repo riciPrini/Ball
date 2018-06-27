@@ -1,11 +1,30 @@
 fileFormatVersion: 2
 guid: c669524b68b86d24eb53d3351e60da61
-timeCreated: 1525368504
-licenseType: Pro
+timeCreated: 1529959647
+licenseType: Free
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - rb: {instanceID: 0}
+  - redMaterial: {instanceID: 0}
+  - yellowMaterial: {instanceID: 0}
+  - blueMaterial: {instanceID: 0}
+  - greenMaterial: {instanceID: 0}
+  - orangeMaterial: {instanceID: 0}
+  - pinkMaterial: {instanceID: 0}
+  - purpleMaterial: {instanceID: 0}
+  - waterMaterial: {instanceID: 0}
+  - whiteMaterial: {instanceID: 0}
+  - record: {instanceID: 0}
+  - gameRecord: {instanceID: 0}
+  - pause: {instanceID: 0}
+  - startgame: {instanceID: 0}
+  - score: {instanceID: 0}
+  - recordText: {instanceID: 0}
+  - stars: {instanceID: 0}
+  - gems: {instanceID: 0}
+  - gemma_img: {fileID: 170028, guid: aed921ccd7a51cd47bcf557c266c33fa, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

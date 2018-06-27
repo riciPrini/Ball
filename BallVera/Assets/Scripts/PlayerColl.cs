@@ -3,6 +3,7 @@
 public class PlayerColl : MonoBehaviour
 {
     public PlayerMove pm;
+   
     public GameObject player;
 
     private void OnCollisionEnter(Collision collision)
@@ -11,6 +12,9 @@ public class PlayerColl : MonoBehaviour
         {
             FindObjectOfType<GameOver>().endGame();
             pm.enabled = false;
+
+        }
+        if (collision.collider.tag=="Gemma") {
 
         }
     }

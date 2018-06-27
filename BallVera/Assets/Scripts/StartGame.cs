@@ -9,15 +9,15 @@ public class StartGame : MonoBehaviour {
     public PlayerMove pm;
     public GameObject stars;
     bool flag = true;
-    
+
     // Use this for initialization
     void Start () {
-
+      
         Screen.orientation = ScreenOrientation.PortraitUpsideDown;
         pm.enabled = false;
         stars.SetActive(false);
         startUI.SetActive (true);
-        
+       
         
 	}
 	

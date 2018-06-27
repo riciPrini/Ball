@@ -19,6 +19,7 @@ public class PlayerMove : MonoBehaviour {
     public GameObject recordText;
     public GameObject stars;
     public GameObject gems;
+    public GameObject gemImage; //dioporco è l'ultimo gioco di merda che faccio con sto unity del cazzo.
     Touch touch;
     Vector3 touchPosition, whereToMove;
     bool isMoving = false;
@@ -36,7 +37,7 @@ public class PlayerMove : MonoBehaviour {
         gems.SetActive(true);
         //string material = FindObjectOfType<SaveData>().LoadColor();
         //Material(material);
-
+        gemImage.SetActive(true);
         record.text = FindObjectOfType<SaveData>().LoadRecord();
         gameRecord.transform.position = new Vector3(-24,100,Convert.ToInt32(record.text));
        gameRecord.text =("Record"+ "\n   "+FindObjectOfType<SaveData>().LoadRecord());
