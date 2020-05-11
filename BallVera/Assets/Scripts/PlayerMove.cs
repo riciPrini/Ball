@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -43,40 +43,40 @@ public class PlayerMove : MonoBehaviour {
        gameRecord.text =("Record"+ "\n   "+FindObjectOfType<SaveData>().LoadRecord());
 
     }
-    void Material(string color)
-    {
-        switch (color)
-        {
-            case "red":
-                GetComponent<Renderer>().material = redMaterial;
-                break;
-            case "yellow":
-                GetComponent<Renderer>().material = yellowMaterial;
-                break;
-            case "blue":
-                GetComponent<Renderer>().material = blueMaterial;
-                break;
-            case "green":
-                GetComponent<Renderer>().material = greenMaterial;
-                break;
-            case "orange":
-                GetComponent<Renderer>().material = orangeMaterial;
-                break;
-            case "pink":
-                GetComponent<Renderer>().material = pinkMaterial;
-                break;
-            case "purple":
-                GetComponent<Renderer>().material = purpleMaterial;
-                break;
-            case "water":
-                GetComponent<Renderer>().material = waterMaterial;
-                break;
-            case "white":
-                GetComponent<Renderer>().material = whiteMaterial;
-                break;
-        }
+    // void Material(string color)
+    // {
+    //     switch (color)
+    //     {
+    //         case "red":
+    //             GetComponent<Renderer>().material = redMaterial;
+    //             break;
+    //         case "yellow":
+    //             GetComponent<Renderer>().material = yellowMaterial;
+    //             break;
+    //         case "blue":
+    //             GetComponent<Renderer>().material = blueMaterial;
+    //             break;
+    //         case "green":
+    //             GetComponent<Renderer>().material = greenMaterial;
+    //             break;
+    //         case "orange":
+    //             GetComponent<Renderer>().material = orangeMaterial;
+    //             break;
+    //         case "pink":
+    //             GetComponent<Renderer>().material = pinkMaterial;
+    //             break;
+    //         case "purple":
+    //             GetComponent<Renderer>().material = purpleMaterial;
+    //             break;
+    //         case "water":
+    //             GetComponent<Renderer>().material = waterMaterial;
+    //             break;
+    //         case "white":
+    //             GetComponent<Renderer>().material = whiteMaterial;
+    //             break;
+    //     }
 
-    }
+    // }
     void FixedUpdate()
     {
         if (flag)
@@ -92,9 +92,9 @@ public class PlayerMove : MonoBehaviour {
                 var halfScreen = Screen.width * 0.5f;
 
                 if (touch.position.x > halfScreen)
-                    rb.AddForce(swipeForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
+                    rb.position=new Vector3( 3.8f, transform.position.y , transform.position.z);
                 else
-                    rb.AddForce(-swipeForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
+                    rb.position=new Vector3( -3.8f, transform.position.y , transform.position.z);
             }
 
             //if (currentDistanceToTouchPos > previousDistanceToTouchPos)
@@ -108,13 +108,30 @@ public class PlayerMove : MonoBehaviour {
 
             if (Input.GetKey("d"))
             {
-                rb.AddForce(rightLeftSpeed * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
+                if(transform.position.x==-3.8f){
+                         Debug.Log("ALANGAYd");
+                         rb.position= new Vector3( 0, transform.position.y , transform.position.z);
+                }
+                else{
+                
+                 rb.position= new Vector3( 3.8f, transform.position.y , transform.position.z);
+                }
+                
+
+                
 
             }
             if (Input.GetKey("a"))
             {
-                rb.AddForce(-rightLeftSpeed * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
-
+                 if(transform.position.x==3.8f){
+                     Debug.Log("ALANGAYs");
+                        rb.position= new Vector3( 0, transform.position.y , transform.position.z);
+                    }
+                    else{
+                    rb.position= new Vector3( -3.8f, transform.position.y , transform.position.z);
+                    }
+                   
+                
             }
             if (rb.position.y < -1f)
             {
